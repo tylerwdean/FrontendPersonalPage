@@ -1,22 +1,27 @@
+/* color palette: 
+#606C38  - lighter green
+#283618  - dark green
+#FEFAE0  - creme
+#DDA15E  - lighter orange
+#BC6C25  - darker orange
+*/
+
 body {
-  border: 5 aqua;
   font-family: 'Arial', Times, serif;
   margin: 0;
   display: flex;
   justify-content: left;
-  background-color: #222;
+  background-color: #283618;
 }
 
 nav {
-  /*position: fixed;  Keeps it in place even when scrolling */
-  flex-grow: 0;
-  left: 0;
-  top: 0;
-  width: 150px; /* Adjust width as needed */
+  position: fixed;
+  width: 150px; 
   height: 100vh; /* Full height of the viewport */
   display: flex;
   flex-direction: column;
-  background-color: #333; /* Dark background */
+  background-color: #BC6C25; /* Dark background */
+  border-radius: 25px 25px 0% 0%;
 }
 
 nav ul {
@@ -26,10 +31,10 @@ nav ul {
 
 nav ul li {
   margin: 10px 0;
+  text-align: center;
 }
 
 nav ul li .ProfilePic {
-
   margin: 10px 0;
   width: 75px;
   height: 75px;
@@ -38,34 +43,24 @@ nav ul li .ProfilePic {
 }
 
 nav ul li a {
-  color: white;
+  color: #FEFAE0;
   text-decoration: none;
   display: block;
   padding: 10px;
 }
 
 nav ul li a:hover {
-  background-color: #555;
+  background-color: #DDA15E;
 }
 
 main {
-  flex-grow: 1;
+  background-color: #283618;
   display: flex;
   flex-direction: column;
   margin-left: 150px;
-  padding: 20px;
-  width: 90%;
-  color:aliceblue;
+  color:#FEFAE0;
   text-align: center;
-}
-
-main ul {
-  list-style: none;
-}
-
-main ul li {
-  text-decoration: none;
-  color: white;
+  min-height: 100vh;
 }
 
 #home-section {
@@ -76,15 +71,52 @@ main ul li {
 }
 
 .team, .solo {
+  background-color: #606C38;
+  margin: 60px;
+  max-width: 200px;
   flex: 1; /* Makes them take up equal space */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; /* Centers content inside the div */
+  justify-content: flex-end;
+  border-radius: 20px;
 
+}
+
+.team ul, .solo ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.team ul li, .solo ul li {
+  margin-top: 10px;
+}
+
+.team ul li a, .solo ul li a{
+  text-decoration: none;
+  color: #FEFAE0;
 }
 
 #home-section img {
   max-width: 300px; /* Adjust image size as needed */
   border-radius: 20px;
+}
+
+.about {
+  flex: 1;
+  background-color: #606C38;
+  color: #FEFAE0;
+  margin-top: 100px;
+  border-radius: 30px 30px 0% 0%;
+}
+
+.about h2 {
+  margin: 50px;
+  text-align: left;
+}
+
+.about article {
+  text-indent: 50px;
+  margin: 50px;
+  text-align:left;
 }
