@@ -1,59 +1,62 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    display: flex;
-    background-color: #222;
+  border: 5 aqua;
+  font-family: 'Arial', Times, serif;
+  margin: 0;
+  display: flex;
+  justify-content: left;
+  background-color: #222;
 }
 
 nav {
-    position: fixed; /* Keeps it in place even when scrolling */
-    left: 0;
-    top: 0;
-    width: 100px; /* Adjust width as needed */
-    height: 100vh; /* Full height of the viewport */
-    display: flex;
-    flex-direction: column;
-    background-color: #333; /* Dark background */
-    padding: 20px;
-  }
+  /*position: fixed;  Keeps it in place even when scrolling */
+  flex-grow: 0;
+  left: 0;
+  top: 0;
+  width: 150px; /* Adjust width as needed */
+  height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  background-color: #333; /* Dark background */
+}
 
-  nav ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    margin: 10px 0;
-  }
-  
-  nav ul li .ProfilePic {
+nav ul {
+  list-style: none;
+  padding: 0;
+}
 
-    margin: 10px 0;
-    width: 75px;
-    height: 75px;
-    object-fit: scale-down;
-    border-radius: 37px;
-  }
+nav ul li {
+  margin: 10px 0;
+}
 
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-  }
+nav ul li .ProfilePic {
 
+  margin: 10px 0;
+  width: 75px;
+  height: 75px;
+  object-fit: scale-down;
+  border-radius: 37px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
 
 main {
-    flex-grow: 1;
-    margin-left: 150px;
-    padding: 20px;
-    width: 90%;
-    color:aliceblue;
-    text-align: center;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  padding: 20px;
+  width: 90%;
+  color:aliceblue;
+  text-align: center;
 }
 
 main ul {
@@ -65,20 +68,23 @@ main ul li {
   color: white;
 }
 
-main img {
-  width: 300px;
+#home-section {
+  display: flex;
+  align-items: center;  /* Align items vertically */
+  justify-content: center; /* Centers the entire content */
+  gap: 20px; /* Adds spacing between elements */
 }
 
-/*main .solo {
-  height: 500px;
-  position: relative;
-  top: -400px;
-  left: -300px;
+.team, .solo {
+  flex: 1; /* Makes them take up equal space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centers content inside the div */
+
 }
 
-main .team {
-  height: 500px;
-  position: relative;
-  top: -200px;
-  left: 300px;
-}*/
+#home-section img {
+  max-width: 300px; /* Adjust image size as needed */
+  border-radius: 20px;
+}
