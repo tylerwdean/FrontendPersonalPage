@@ -16,11 +16,13 @@ body {
 
 nav {
   position: fixed;
-  width: 150px; 
-  height: 100vh; /* Full height of the viewport */
+  width: 150px;
+  height: 100vh;
+  /* Full height of the viewport */
   display: flex;
   flex-direction: column;
-  background-color: #BC6C25; /* Dark background */
+  background-color: #BC6C25;
+  /* Dark background */
   border-radius: 25px 25px 0% 0%;
 }
 
@@ -58,23 +60,28 @@ main {
   display: flex;
   flex-direction: column;
   margin-left: 150px;
-  color:#FEFAE0;
+  color: #FEFAE0;
   text-align: center;
   min-height: 100vh;
 }
 
 #home-section {
   display: flex;
-  align-items: center;  /* Align items vertically */
-  justify-content: center; /* Centers the entire content */
-  gap: 20px; /* Adds spacing between elements */
+  align-items: center;
+  /* Align items vertically */
+  justify-content: center;
+  /* Centers the entire content */
+  gap: 20px;
+  /* Adds spacing between elements */
 }
 
-.team, .solo {
+.team,
+.solo {
   background-color: #606C38;
   margin: 60px;
   max-width: 300px;
-  flex: 1; /* Makes them take up equal space */
+  flex: 1;
+  /* Makes them take up equal space */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -82,23 +89,32 @@ main {
 
 }
 
-.team ul, .solo ul{
+.team a:hover,
+.solo a:hover {
+  color: #DDA15E;
+}
+
+.team ul,
+.solo ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.team ul li, .solo ul li {
+.team ul li,
+.solo ul li {
   margin-top: 10px;
 }
 
-.team ul li a, .solo ul li a{
+.team ul li a,
+.solo ul li a {
   text-decoration: none;
   color: #FEFAE0;
 }
 
 #home-section img {
-  max-width: 300px; /* Adjust image size as needed */
+  max-width: 300px;
+  /* Adjust image size as needed */
   border-radius: 20px;
 }
 
@@ -118,5 +134,5 @@ main {
 .about article {
   text-indent: 50px;
   margin: 50px;
-  text-align:left;
+  text-align: left;
 }
