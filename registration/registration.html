@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+</head>
+<body>
+    <header><h1>Welcome to Group 3's event center!</h1></header>
+
+    <form action="/register.html">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="firstName">First Name: </label><input type="text" id="firstName"/>
+        <br>
+        <br>
+        <label for="lastName">Last Name: </label><input type="text" id="lastName"/>
+        <br>
+        <br>
+        <label for="email">Email: </label><input type="email" id="email"/>
+        <br>
+        <br>
+        <label for="phoneNumber">Phone number: </label><input type="number" id="phoneNumber"/></p>
+    </fieldset>
+    
+    <br>
+    
+    <label for="EventType">Select an Event:</label>
+    <select id="EventType" required>
+        <option value="none" disabled selected>--Please select one--</option>
+        <option value="Wedding Reception">Wedding reception</option>
+        <option value="Quincenera">Quincenera</option>
+        <option value="Birthday Party">Birthday Party</option>
+        <option value="Night with the Friars">Night with the Friars</option>
+    </select>
+    
+    <br>
+    <br>
+
+    <legend>Special Requests</legend>
+    <textarea rows="4" cols="30"></textarea>
+    <br>
+    <input type="submit">
+    <!--button>Submit</button-->
+    <!--On button press, this will trigger the form action, where it executes GET /register-->
+    </form>
+</body>
+</html>
