@@ -89,10 +89,6 @@ main {
 
 }
 
-.team a:hover,
-.solo a:hover {
-  color: #DDA15E;
-}
 
 .team ul,
 .solo ul {
@@ -112,6 +108,10 @@ main {
   color: #FEFAE0;
 }
 
+.team ul li a:hover,
+.solo ul li a:hover {
+  color: #DDA15E;
+}
 #home-section img {
   max-width: 300px;
   /* Adjust image size as needed */
