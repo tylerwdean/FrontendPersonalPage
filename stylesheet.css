@@ -82,6 +82,7 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-top: 25vh;
   margin-bottom: 50vh;
   background-color: var(--dark-purple);
   padding: 20px;
